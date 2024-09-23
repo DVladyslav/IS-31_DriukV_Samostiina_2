@@ -5230,7 +5230,7 @@
         <h3 style="color: green;">Приклад 1: CSS text-overflow - Переповнення</h3>
         <div class="styled-div189">
             <style>
-                .styled-div189 p.test1 {
+                .styled-div189 p.test01 {
                     white-space: nowrap;
                     width: 200px;
                     border: 1px solid #000000;
@@ -5238,7 +5238,7 @@
                     text-overflow: clip;
                 }
 
-                .styled-div189 p.test2 {
+                .styled-div189 p.test02 {
                     white-space: nowrap;
                     width: 200px;
                     border: 1px solid #000000;
@@ -5246,75 +5246,75 @@
                     text-overflow: ellipsis;
                 }
 
-                .styled-div189 div.test {
+                .styled-div189 div.test01 {
                     white-space: nowrap;
                     width: 200px;
                     overflow: hidden;
                     border: 1px solid #000000;
                 }
 
-                .styled-div189 div.test:hover {
+                .styled-div189 div.test01:hover {
                     overflow: visible;
                 }
             </style>
-            <p class="test1">This is some long text that will not fit in the box</p>
-            <p class="test2">This is some long text that will not fit in the box</p>
-            <div class="test" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
+            <p class="test01">This is some long text that will not fit in the box</p>
+            <p class="test02">This is some long text that will not fit in the box</p>
+            <div class="test01" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
             <br>
-            <div class="test" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
+            <div class="test01" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
         </div>
         <h3 style="color: green;">Приклад 2: CSS word-wrap - Перенесення слів</h3>
         <div class="styled-div190">
             <style>
-                .styled-div190 p.test {
+                .styled-div190 p.test001 {
                     width: 11em;
                     border: 1px solid #000000;
                     word-wrap: break-word;
                 }
             </style>
-            <p class="test">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long
+            <p class="test001">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long
                 word will break and wrap to the next line.</p>
         </div>
         <h3 style="color: green;">Приклад 3: CSS word-break - Обривання слів</h3>
         <div class="styled-div191">
             <style>
-                .styled-div191 p.test1 {
+                .styled-div191 p.test0001 {
                     width: 140px;
                     border: 1px solid #000000;
                     word-break: keep-all;
                 }
 
-                .styled-div191 p.test2 {
+                .styled-div191 p.test0002 {
                     width: 140px;
                     border: 1px solid #000000;
                     word-break: break-all;
                 }
             </style>
-            <p class="test1">This paragraph contains some text. This line will-break-at-hyphens.</p>
+            <p class="test0001">This paragraph contains some text. This line will-break-at-hyphens.</p>
 
-            <p class="test2">This paragraph contains some text. The lines will break at any character.</p>
+            <p class="test0002">This paragraph contains some text. The lines will break at any character.</p>
         </div>
         <h3 style="color: green;">Приклад 4: CSS writing-mode - Режим запису</h3>
         <div class="styled-div192">
             <style>
-                .styled-div192 p.test1 {
+                .styled-div192 p.test00001 {
                     writing-mode: horizontal-tb;
                 }
 
-                .styled-div192 span.test2 {
+                .styled-div192 span.test00002 {
                     writing-mode: vertical-rl;
                 }
 
-                .styled-div192 p.test2 {
+                .styled-div192 p.test00002 {
                     writing-mode: vertical-rl;
                 }
             </style>
 
-            <p class="test1">Some text with default writing-mode.</p>
+            <p class="test00001">Some text with default writing-mode.</p>
 
-            <p>Some text with a span element with a <span class="test2">vertical-rl</span> writing-mode.</p>
+            <p>Some text with a span element with a <span class="test00002">vertical-rl</span> writing-mode.</p>
 
-            <p class="test2">Some text with writing-mode: vertical-rl.</p>
+            <p class="test00002">Some text with writing-mode: vertical-rl.</p>
         </div>
         <h3 style="color: purple;">Вправа</h3>
         <!-- Specify that the overflowed content for the <p> element should be signaled with an ellipsis (...).-->
@@ -5354,7 +5354,7 @@
         <!-- Specify that text in the <p> element can break between any two letters.-->
         <div class="styled-div195">
             <style>
-                p {
+                .styled-div195 p {
                     width: 150px;
                     border: 1px solid #000000;
                     word-break: break-all;
