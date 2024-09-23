@@ -3020,7 +3020,7 @@
             </style>
             <div>This is a div element. It has some text.</div>
         </div>
-        <h1 style="color: blue;"><i>2.1 CSS Закруглені кути</i></h1>
+        <h1 style="color: blue;"><i>2.2 CSS Анімації</i></h1>
         <h3 style="color: green;">Приклад 1: Правило @keyframes (ключові кадри)</h3>
         <div class="styled-div125">
             <style>
@@ -3724,78 +3724,1648 @@
             </style>
             <div>This is a div</div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <br>
+        <h1 style="color: blue;"><i>2.3 CSS Підказки</i></h1>
+        <h3 style="color: green;">Приклад 1: Основна (базова) підказка</h3>
+        <div class="tooltip">
+            <style>
+                .tooltip0 {
+                    position: relative;
+                    display: inline-block;
+                    border-bottom: 1px dotted black;
+                }
+
+                .tooltip0 .tooltiptext0 {
+                    visibility: hidden;
+                    width: 120px;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px 0;
+
+                    /* Position the tooltip */
+                    position: absolute;
+                    z-index: 1;
+                }
+
+                .tooltip0:hover .tooltiptext0 {
+                    visibility: visible;
+                }
+            </style>
+            <div class="tooltip0">Hover over me
+                <span class="tooltiptext0">Glory to UKRAINE!</span>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 2: Позиціонування виринаючих підказок</h3>
+        <div class="styled-div145">
+            <style>
+                .styled-div145 .tooltip1 {
+                    position: relative;
+                    display: inline-block;
+                    border-bottom: 1px dotted black;
+                }
+
+                .styled-div145 .tooltip2 {
+                    position: relative;
+                    display: inline-block;
+                    border-bottom: 1px dotted black;
+                }
+
+                .styled-div145 .tooltip3 {
+                    position: relative;
+                    display: inline-block;
+                    border-bottom: 1px dotted black;
+                }
+
+                .styled-div145 .tooltip4 {
+                    position: relative;
+                    display: inline-block;
+                    border-bottom: 1px dotted black;
+                }
+
+                .styled-div145 .tooltip1 .tooltiptext1 {
+                    visibility: hidden;
+                    width: 120px;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px 0;
+                    position: absolute;
+                    z-index: 1;
+                    top: -5px;
+                    left: 105%;
+                }
+
+                .styled-div145 .tooltip2 .tooltiptext2 {
+                    visibility: hidden;
+                    width: 120px;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px 0;
+                    position: absolute;
+                    z-index: 1;
+                    top: -5px;
+                    right: 105%;
+                }
+
+                .styled-div145 .tooltip3 .tooltiptext3 {
+                    visibility: hidden;
+                    width: 120px;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px 0;
+                    position: absolute;
+                    z-index: 1;
+                    width: 120px;
+                    bottom: 100%;
+                    left: 50%;
+                    margin-left: -60px;
+                }
+
+                .styled-div145 .tooltip4 .tooltiptext4 {
+                    visibility: hidden;
+                    width: 120px;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px 0;
+                    position: absolute;
+                    z-index: 1;
+                    width: 120px;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -60px;
+                }
+
+                .styled-div145 .tooltip1:hover .tooltiptext1 {
+                    visibility: visible;
+                }
+
+                .styled-div145 .tooltip2:hover .tooltiptext2 {
+                    visibility: visible;
+                }
+
+                .styled-div145 .tooltip3:hover .tooltiptext3 {
+                    visibility: visible;
+                }
+
+                .styled-div145 .tooltip4:hover .tooltiptext4 {
+                    visibility: visible;
+                }
+            </style>
+            <div class="tooltip1">Hover over me
+                <span class="tooltiptext1">Glory to UKRAINE!</span>
+            </div>
+            <br>
+            <div class="tooltip2">Hover over me
+                <span class="tooltiptext2">Glory to UKRAINE!</span>
+            </div><br>
+            <div class="tooltip3">Hover over me
+                <span class="tooltiptext3">Glory to UKRAINE!</span>
+            </div><br>
+            <div class="tooltip4">Hover over me
+                <span class="tooltiptext4">Glory to UKRAINE!</span>
+            </div><br>
+        </div>
+        <h3 style="color: green;">Приклад 3: Підказка зі стрілкою</h3>
+        <div class="styled-div146">
+            <style>
+                .styled-div146 .tooltip01 {
+                    position: relative;
+                    display: inline-block;
+                    border-bottom: 1px dotted black;
+                }
+
+                .styled-div146 .tooltip01 .tooltiptext01 {
+                    visibility: hidden;
+                    width: 120px;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px 0;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 150%;
+                    left: 50%;
+                    margin-left: -60px;
+                }
+
+                .styled-div146 .tooltip01 .tooltiptext01::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: black transparent transparent transparent;
+                }
+
+                .styled-div146 .tooltip01:hover .tooltiptext01 {
+                    visibility: visible;
+                }
+            </style>
+            <div class="tooltip01">Hover over me
+                <span class="tooltiptext01">Glory to UKRAINE!</span>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 4: Виринаючі підказки (анімація)</h3>
+        <div class="styled-div147">
+            <style>
+                .styled-div147 .tooltip02 {
+                    position: relative;
+                    display: inline-block;
+                    border-bottom: 1px dotted black;
+                }
+
+                .styled-div147 .tooltip02 .tooltiptext02 {
+                    visibility: hidden;
+                    width: 120px;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px 0;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 100%;
+                    left: 50%;
+                    margin-left: -60px;
+                    opacity: 0;
+                    transition: opacity 1s;
+                }
+
+                .styled-div147 .tooltip02 .tooltiptext02::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: black transparent transparent transparent;
+                }
+
+                .styled-div147 .tooltip02:hover .tooltiptext02 {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            </style>
+            <div class="tooltip02">Hover over me
+                <span class="tooltiptext02">Glory to UKRAINE!</span>
+            </div>
+        </div>
+        <br>
+        <h1 style="color: blue;"><i>2.4 CSS Кнопки</i></h1>
+        <h3 style="color: green;">Приклад 1: Основні стилі кнопок</h3>
+        <div class="styled-div148">
+            <style>
+                .styled-div148 .button1 {
+                    background-color: #2c1d81;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+            </style>
+            <button>Default Button</button>
+            <a href="#" class="button1">Link Button</a>
+            <button class="button1">Button</button>
+            <input type="button1" class="button1" value="Input Button">
+        </div>
+        <h3 style="color: green;">Приклад 2: Кольори кнопок</h3>
+        <div class="styled-div148">
+            <style>
+                .styled-div148 .button {
+                    background-color: #04AA6D;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+
+                .styled-div148 .button3 {
+                    background-color: #008CBA;
+                }
+
+                /* Blue */
+                .styled-div148 .button4 {
+                    background-color: #f44336;
+                }
+
+                /* Red */
+                .styled-div148 .button5 {
+                    background-color: #e7e7e7;
+                    color: black;
+                }
+
+                /* Gray */
+                .styled-div148 .button6 {
+                    background-color: #555555;
+                }
+
+                /* Black */
+            </style>
+            <button class="button">Green</button>
+            <button class="button button3">Blue</button>
+            <button class="button button4">Red</button>
+            <button class="button button5">Gray</button>
+            <button class="button button6">Black</button>
+        </div>
+        <h3 style="color: green;">Приклад 3: Розмір кнопок</h3>
+        <div class="styled-div149">
+            <style>
+                .styled-div149 .button {
+                    background-color: #4CAF99;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+
+                .styled-div149 .button7 {
+                    font-size: 10px;
+                }
+
+                .styled-div149 .button8 {
+                    font-size: 12px;
+                }
+
+                .styled-div149 .button9 {
+                    font-size: 16px;
+                }
+
+                .styled-div149 .button10 {
+                    font-size: 20px;
+                }
+
+                .styled-div149 .button11 {
+                    font-size: 24px;
+                }
+            </style>
+            <button class="button button7">10px</button>
+            <button class="button button8">12px</button>
+            <button class="button button9">16px</button>
+            <button class="button button10">20px</button>
+            <button class="button button11">24px</button>
+
+        </div>
+        <div class="styled-div150">
+            <style>
+                .styled-div150 .button {
+                    background-color: #4CAF99;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+
+                .styled-div150 .button12 {
+                    padding: 10px 24px;
+                }
+
+                .styled-div150 .button13 {
+                    padding: 12px 28px;
+                }
+
+                .styled-div150 .button14 {
+                    padding: 14px 40px;
+                }
+
+                .styled-div150 .button15 {
+                    padding: 32px 16px;
+                }
+
+                .styled-div150 .button16 {
+                    padding: 16px;
+                }
+            </style>
+            <button class="button button12">10px 24px</button>
+            <button class="button button13">12px 28px</button>
+            <button class="button button14">14px 40px</button>
+            <button class="button button15">32px 16px</button>
+            <button class="button button16">16px</button>
+
+        </div>
+        <h3 style="color: green;">Приклад 4: Округлі кнопки</h3>
+        <div class="styled-div151">
+            <style>
+                .styled-div151 .button {
+                    background-color: #2CFA80;
+                    /* Green */
+                    border: none;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+
+                .styled-div151 .button17 {
+                    border-radius: 2px;
+                }
+
+                .styled-div151 .button18 {
+                    border-radius: 4px;
+                }
+
+                .styled-div151 .button19 {
+                    border-radius: 8px;
+                }
+
+                .styled-div151 .button20 {
+                    border-radius: 12px;
+                }
+
+                .styled-div151 .button21 {
+                    border-radius: 50%;
+                }
+            </style>
+            <button class="button button17">2px</button>
+            <button class="button button18">4px</button>
+            <button class="button button19">8px</button>
+            <button class="button button20">12px</button>
+            <button class="button button21">50%</button>
+
+        </div>
+        <h3 style="color: green;">Приклад 5: Округлі кнопки</h3>
+        <div class="styled-div152">
+            <style>
+                .styled-div152 .button {
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+
+                .styled-div152 .button22 {
+                    background-color: white;
+                    color: black;
+                    border: 2px solid #4CAF50;
+                }
+
+                .styled-div152 .button22:hover {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+
+                .styled-div152 .button23 {
+                    background-color: white;
+                    color: black;
+                    border: 2px solid #008CBA;
+                }
+
+                .styled-div152 .button23:hover {
+                    background-color: #008CBA;
+                    color: white;
+                }
+
+                .styled-div152 .button24 {
+                    background-color: white;
+                    color: black;
+                    border: 2px solid #f44336;
+                }
+
+                .styled-div152 .button24:hover {
+                    background-color: #f44336;
+                    color: white;
+                }
+
+                .styled-div152 .button25 {
+                    background-color: white;
+                    color: black;
+                    border: 2px solid #e7e7e7;
+                }
+
+                .styled-div152 .button25:hover {
+                    background-color: #e7e7e7;
+                }
+
+                .styled-div152 .button26 {
+                    background-color: white;
+                    color: black;
+                    border: 2px solid #555555;
+                }
+
+                .styled-div152 .button26:hover {
+                    background-color: #555;
+                    color: white;
+                }
+            </style>
+            <button class="button button22">Green</button>
+            <button class="button button23">Blue</button>
+            <button class="button button24">Red</button>
+            <button class="button button25">Gray</button>
+            <button class="button button26">Black</button>
+        </div>
+        <h3 style="color: green;">Приклад 6: Тінь кнопок</h3>
+        <div class="styled-div153">
+            <style>
+                .styled-div153 .button {
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    transition-duration: 0.4s;
+                }
+
+                .styled-div153 .button27 {
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+
+
+                .styled-div153 .button28:hover {
+                    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+                }
+            </style>
+            <button class="button button27">button1</button>
+            <button class="button button28">button2</button>
+        </div>
+        <h3 style="color: green;">Приклад 7: Відключені кнопки</h3>
+        <div class="styled-div154">
+            <style>
+                .styled-div154 .button {
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+
+                .styled-div154 .disabled {
+                    opacity: 0.6;
+                    cursor: not-allowed;
+                }
+            </style>
+            <button class="button">button1</button>
+            <button class="button disabled">button2</button>
+        </div>
+        <h3 style="color: green;">Приклад 8: Вертикальна група кнопок</h3>
+        <div class="styled-div155">
+            <style>
+                .styled-div155 .button {
+                    background-color: #0BCD99;
+                    border: 1px solid green;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 16px;
+                    cursor: pointer;
+                    width: 150px;
+                    display: block;
+                }
+
+                .styled-div155 .btn-group .button:not(:last-child) {
+                    border-bottom: none;
+                }
+
+                .styled-div155 .btn-group .button:hover {
+                    background-color: #3e8e41;
+                }
+            </style>
+            <button class="button">Кнопка</button>
+            <button class="button">Кнопка</button>
+            <button class="button">Кнопка</button>
+            <button class="button">Кнопка</button>
+        </div>
+        <h3 style="color: green;">Приклад 9: Кнопка на зображенні</h3>
+        <div class="styled-div156">
+            <style>
+                .styled-div156 .container {
+                    position: relative;
+                    width: 100%;
+                    max-width: 400px;
+                }
+
+                .styled-div156 .container img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .styled-div156 .container .btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    background-color: #f1f1f1;
+                    color: black;
+                    font-size: 16px;
+                    padding: 16px 30px;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    text-align: center;
+                }
+
+                .styled-div156 .container .btn:hover {
+                    background-color: black;
+                    color: white;
+                }
+            </style>
+            <div class="container">
+                <img src="https://w3schoolsua.github.io/images/img_lights.jpg" alt="wow" style="width:100%">
+                <button class="btn">Кнопка</button>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 10: Анімовані кнопки</h3>
+        <div class="styled-div157">
+            <style>
+                .styled-div157 .button {
+                    display: inline-block;
+                    border-radius: 4px;
+                    background-color: #f4585e;
+                    border: none;
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 28px;
+                    padding: 20px;
+                    width: 200px;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                    margin: 5px;
+                }
+
+                .styled-div157 .button span {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                    transition: 0.5s;
+                }
+
+                .styled-div157 .button span:after {
+                    content: '\00bb';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                }
+
+                .styled-div157 .button:hover span {
+                    padding-right: 25px;
+                }
+
+                .styled-div157 .button:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                }
+            </style>
+            <button class="button" style="vertical-align:middle"><span>BUTTON</span></button>
+        </div>
+        <div class="styled-div158">
+            <style>
+                .styled-div158 .button {
+                    display: inline-block;
+                    padding: 15px 25px;
+                    font-size: 24px;
+                    cursor: pointer;
+                    text-align: center;
+                    text-decoration: none;
+                    outline: none;
+                    color: #fff;
+                    background-color: #4CAF50;
+                    border: none;
+                    border-radius: 15px;
+                    box-shadow: 0 9px #999;
+                }
+
+                .styled-div158 .button:hover {
+                    background-color: #3e8e41
+                }
+
+                .styled-div158 .button:active {
+                    background-color: #3e8e41;
+                    box-shadow: 0 5px #666;
+                    transform: translateY(4px);
+                }
+            </style>
+            <button class="button">BUTTON</button>
+        </div><br>
+        <div class="styled-div159">
+            <style>
+                .styled-div159 .button {
+                    position: relative;
+                    background-color: #4CAF50;
+                    border: none;
+                    font-size: 28px;
+                    color: #FFF;
+                    padding: 20px;
+                    width: 200px;
+                    text-align: center;
+                    transition-duration: 0.4s;
+                    text-decoration: none;
+                    overflow: hidden;
+                    cursor: pointer;
+                }
+
+                .styled-div159 .button:after {
+                    content: "";
+                    background: #f1f1f1;
+                    display: block;
+                    position: absolute;
+                    padding-top: 300%;
+                    padding-left: 350%;
+                    margin-left: -20px !important;
+                    margin-top: -120%;
+                    opacity: 0;
+                    transition: all 0.8s
+                }
+
+                .styled-div159 .button:active:after {
+                    padding: 0;
+                    margin: 0;
+                    opacity: 1;
+                    transition: 0s
+                }
+            </style>
+            <button class="button">BUTTON</button>
+        </div><br>
+        <h1 style="color:blue "><i>2.5 CSS Пагінація</i></h1>
+        <h3 style="color: green;">Приклад 1</h3>
+        <div class="styled-div160">
+            <style>
+                .center {
+                    text-align: center;
+                }
+
+                .styled-div160 .pagination {
+                    display: inline-block;
+                }
+
+                .styled-div160 .pagination a {
+                    color: black;
+                    float: left;
+                    padding: 8px 16px;
+                    font-size: 22px;
+                    text-decoration: none;
+                    transition: background-color .3s;
+                    border: 1px solid #ddd;
+                    margin: 0 4px;
+                }
+
+                .styled-div160 .pagination a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                    border: 1px solid #4CAF50;
+                }
+
+                .styled-div160 .pagination a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+            </style>
+            <div class="center">
+                <div class="pagination">
+                    <a href="#">«</a>
+                    <a href="#">1</a>
+                    <a href="#" class="active">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">»</a>
+                </div>
+            </div>
+        </div>
+        <div class="styled-div161">
+            <style>
+                .styled-div161 ul.breadcrumb {
+                    padding: 8px 16px;
+                    list-style: none;
+                    background-color: #eee;
+                }
+
+                .styled-div161 ul.breadcrumb li {
+                    display: inline;
+                }
+
+                .styled-div161 ul.breadcrumb li+li:before {
+                    padding: 8px;
+                    color: black;
+                    content: "/\00a0";
+                }
+
+                .styled-div161 ul.breadcrumb li a {
+                    color: green;
+                }
+            </style>
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pictures</a></li>
+                <li><a href="#">Summer 15</a></li>
+                <li>Italy</li>
+            </ul>
+        </div>
+        <h1 style="color:blue "><i>2.6 Створення стовпців CSS</i></h1>
+        <h3 style="color: green;">Приклади 1-6</h3>
+        <div class="styled-div162">
+            <style>
+                .styled-div162 .newspaper {
+                    column-count: 3;
+                    column-gap: 40px;
+                    column-width: 50px;
+                    column-rule-style: solid;
+                    column-rule-width: 1px;
+                    column-rule-color: lightblue;
+                }
+
+                .styled-div162 h2 {
+                    column-span: all;
+                }
+            </style>
+            <div class="newspaper">
+                <h2>Lorem Ipsum Dolor Sit Amet</h2>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
+                in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+                vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis
+                dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil
+                imperdiet doming id quod mazim placerat facer possim assum.
+            </div>
+        </div>
+        <h1 style="color:blue "><i>2.7 CSS Випадаючі (що розкриваються) списки</i></h1>
+        <h3 style="color: green;">Приклад 1: Основний випадаючий (що розкривається) список</h3>
+        <div class="styled-div163">
+            <style>
+                .styled-div163 .dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                .styled-div163 .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    padding: 12px 16px;
+                    z-index: 1;
+                }
+
+                .styled-div163 .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+            </style>
+            <p>Move the mouse over the text below to open the dropdown content.</p>
+
+            <div class="dropdown">
+                <span>Mouse over me</span>
+                <div class="dropdown-content">
+                    <p>Hello World!</p>
+                </div>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 2: Випадаюче меню</h3>
+        <div class="styled-div164">
+            <style>
+                .styled-div164 .dropbtn {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 16px;
+                    font-size: 16px;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                .styled-div164 .dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                .styled-div164 .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    right: 0;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+
+                .styled-div164 .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+                .styled-div164 .dropdown-content a:hover {
+                    background-color: #f1f1f1
+                }
+
+                .styled-div164 .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+
+                .styled-div164 .dropdown:hover .dropbtn {
+                    background-color: #3e8e41;
+                }
+            </style>
+            <p>Move the mouse over the text below to open the dropdown content.</p>
+
+            <div class="dropdown" style="float:left;">
+                <button class="dropbtn">Left</button>
+                <div class="dropdown-content" style="left:0;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
+            <div class="dropdown" style="float:right;">
+                <button class="dropbtn">Right</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div><br><br><br>
+        <h3 style="color: green;">Приклад 3</h3>
+        <div class="styled-div165">
+            <style>
+                .styled-div165 .dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                .styled-div165 .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+
+                .styled-div165 .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+
+                .styled-div165 .desc {
+                    padding: 15px;
+                    text-align: center;
+                }
+            </style>
+            <p>Move the mouse over the text below to open the dropdown content.</p>
+
+            <div class="dropdown">
+                <img src="https://w3schoolsua.github.io/images/img_5terre.jpg" alt="Cinque Terre" width="100"
+                    height="50">
+                <div class="dropdown-content">
+                    <img src="https://w3schoolsua.github.io/images/img_5terre.jpg" alt="Cinque Terre" width="300"
+                        height="200">
+                    <div class="desc">Beautiful Cinque Terre</div>
+                </div>
+            </div>
+        </div>
+        <div class="styled-div166">
+            <style>
+                .styled-div166 ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: #333;
+                }
+
+                .styled-div166 li {
+                    float: left;
+                }
+
+                .styled-div166 li a,
+                .dropbtn {
+                    display: inline-block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+                .styled-div166 li a:hover,
+                .dropdown:hover .dropbtn {
+                    background-color: red;
+                }
+
+                .styled-div166 li.dropdown {
+                    display: inline-block;
+                }
+
+                .styled-div166 .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+
+                .styled-div166 .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+
+                .styled-div166 .dropdown-content a:hover {
+                    background-color: #f1f1f1;
+                }
+
+                .styled-div166 .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+            </style>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div><br>
+        <h1 style="color:blue "><i>2.8 CSS Ключові слова кольору</i></h1>
+        <h3 style="color: green;">Приклад 1:Ключове слово transparent (прозорість)</h3>
+
+        <div class="styled-div167">
+            <style>
+                .styled-div167 .container1 {
+                    background-image: url("https://www.w3schools.com/css/paper.gif");
+                }
+
+                .styled-div167 div.ex1 {
+                    background-color: lightgreen;
+                    border: 2px solid black;
+                    padding: 15px;
+                }
+
+                .styled-div167 div.ex2 {
+                    background-color: transparent;
+                    border: 2px solid black;
+                    padding: 15px;
+                }
+            </style>
+            <div class="container1">
+                <div class="ex1">This div has a light green background.</div>
+                <br>
+                <div class="ex2">This div has a transparent background.</div>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 2:Ключове слово currentcolor (поточний колір)</h3>
+
+        <div class="styled-div168">
+            <style>
+                .styled-div168 .container1 {
+                    color: green;
+                }
+
+                .styled-div168 div {
+                    box-shadow: 0px 0px 15px currentcolor;
+                    border: 5px solid currentcolor;
+                    padding: 15px;
+                }
+            </style>
+            <div class="container1">
+                <div>
+                    <p>This div's border color and shadow color is set to the current color value of the body element.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 3:Ключове слово inherit (наслідування)</h3>
+        <div class="styled-div169">
+            <style>
+                .styled-div169 div {
+                    border: 2px solid red;
+                }
+
+                .styled-div169 span {
+                    border: inherit;
+                }
+            </style>
+            <div>Here, the <span>span element's</span> border settings will be inherited from the parent element.</div>
+            <br>
+
+            <div style="border:2px dotted blue;">Here, the <span>span element's</span> border settings will also be
+                inherited from the parent element.</div>
+        </div>
+        <br>
+        <h1 style="color:blue "><i>2.9 CSS Ефекти тіні</i></h1>
+        <h3 style="color: green;">Приклад 1: CSS Тінь тексту</h3>
+        <div class="styled-div170">
+            <style>
+                .styled-div170 h1 {
+                    text-shadow: 2px 2px;
+                }
+
+                .styled-div170 h2 {
+                    text-shadow: 2px 2px red;
+                }
+
+                .styled-div170 h3 {
+                    text-shadow: 2px 2px 5px red;
+                }
+
+                .styled-div170 h4 {
+                    color: white;
+                    text-shadow: 2px 2px 4px #000;
+                }
+
+                .styled-div170 h5 {
+                    text-shadow: 0 0 3px #FF0000;
+                }
+            </style>
+            <h1>Text shadow effect!</h1>
+            <h2>Text shadow effect!</h2>
+            <h3>Text shadow effect!</h3>
+            <h4>Text shadow effect!</h4>
+            <h5>Text shadow effect!</h5>
+        </div>
+        <h3 style="color: green;">Приклад 2: Кілька тіней</h3>
+        <div class="styled-div171">
+            <style>
+                .styled-div171 h1 {
+                    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+                }
+
+                .styled-div171 h2 {
+                    color: white;
+                    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+                }
+
+                .styled-div171 h3 {
+                    color: yellow;
+                    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                }
+            </style>
+            <h1>Text shadow effect!</h1>
+            <h2>Text shadow effect!</h2>
+            <h3>Text shadow effect!</h3>
+        </div>
+        <h1 style="color:blue "><i>2.10 CSS Тінь блоку</i></h1>
+        <h3 style="color: green;">Приклад 1: CSS Тінь блоку</h3>
+        <div class="styled-div172">
+            <style>
+                .styled-div172 div {
+                    width: 300px;
+                    height: 100px;
+                    padding: 15px;
+                    background-color: yellow;
+                    box-shadow: 10px 10px;
+                }
+            </style>
+            <div></div>
+        </div><br>
+        <div class="styled-div173">
+            <style>
+                .styled-div173 div {
+                    width: 300px;
+                    height: 100px;
+                    padding: 15px;
+                    background-color: yellow;
+                    box-shadow: 10px 10px 5px grey;
+                }
+            </style>
+            <div></div>
+        </div>
+        <h3 style="color: green;">Приклад 2: Карточки</h3>
+        <div class="styled-div174">
+            <style>
+                .styled-div174 div.card {
+                    width: 250px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    text-align: center;
+                }
+
+                .styled-div174 div.header {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 10px;
+                    font-size: 40px;
+                }
+
+                .styled-div174 div.container1 {
+                    padding: 10px;
+                }
+
+                .styled-div174 div.polaroid {
+                    width: 250px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    text-align: center;
+                }
+
+                .styled-div174 div.container2 {
+                    padding: 10px;
+                }
+            </style>
+            <div class="card">
+                <div class="header">
+                    <h1>1</h1>
+                </div>
+
+                <div class="container1">
+                    <p>January 1, 2021</p>
+                </div>
+            </div><br><br>
+            <div class="polaroid">
+                <img src="https://www.w3schools.com/css/rock600x400.jpg" alt="Norway" style="width:100%">
+                <div class="container2">
+                    <p>Hardanger, Norway</p>
+                </div>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set a "2px" horizontal, and "2px" vertical, text shadow for the <h1> element. -->
+        <div class="styled-div175">
+            <style>
+                .styled-div175 h1 {
+                    text-shadow: 2px 2px;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set a "2px" horizontal, and "2px" vertical, "green" text shadow for the <h1> element, with a "5px" blur radius. -->
+        <div class="styled-div176">
+            <style>
+                .styled-div176 h1 {
+                    text-shadow: 2px 2px 5px green;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set a "2px" horizontal, and "2px" vertical, "green" text shadow for the <h1> element, with a "5px" blur radius. -->
+        <div class="styled-div177">
+            <style>
+                .styled-div177 h1 {
+                    text-shadow: 2px 2px 5px green, 3px 3px 10px red;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set a "10px" horizontal, and "10px" vertical, box shadow for the <div> element. -->
+        <div class="styled-div178">
+            <style>
+                .styled-div178 div {
+                    box-shadow: 10px 10px;
+                }
+            </style>
+            <div>
+                <h1>This is a heading</h1>
+                <p>This is a paragraph</p>
+                <p>This is a paragraph</p>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set a "10px" horizontal, and "10px" vertical, "red" box shadow for the <div> element.-->
+        <div class="styled-div179">
+            <style>
+                .styled-div179 div {
+                    box-shadow: 10px 10px red;
+                }
+            </style>
+            <div>
+                <h1>This is a heading</h1>
+                <p>This is a paragraph</p>
+                <p>This is a paragraph</p>
+            </div>
+        </div><br>
+        <h1 style="color:blue "><i>2.11 CSS Переходи</i></h1>
+        <h3 style="color: green;">Приклад 1: CSS Переходи</h3>
+        <div class="styled-div180">
+            <style>
+                .styled-div180 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: width 2s, height 4s;
+                }
+
+                .styled-div180 div:hover {
+                    width: 300px;
+                    height: 300px;
+                }
+            </style>
+            <div>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 2: Вкажіть криву швидкості переходу</h3>
+        <div class="styled-div181">
+            <style>
+                .styled-div181 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: width 2s;
+                }
+
+                .styled-div181 #div1 {
+                    transition-timing-function: linear;
+                }
+
+                .styled-div181 #div2 {
+                    transition-timing-function: ease;
+                }
+
+                .styled-div181 #div3 {
+                    transition-timing-function: ease-in;
+                }
+
+                .styled-div181 #div4 {
+                    transition-timing-function: ease-out;
+                }
+
+                .styled-div181 #div5 {
+                    transition-timing-function: ease-in-out;
+                }
+
+                div:hover {
+                    width: 300px;
+                }
+            </style>
+            <div id="div1">linear</div><br>
+            <div id="div2">ease</div><br>
+            <div id="div3">ease-in</div><br>
+            <div id="div4">ease-out</div><br>
+            <div id="div5">ease-in-out</div><br>
+        </div><br>
+        <div class="styled-div182">
+            <style>
+                .styled-div182 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: width 3s;
+                    transition-delay: 1s;
+                }
+
+                .styled-div182 div:hover {
+                    width: 300px;
+                }
+            </style>
+            <div>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 3: Transition + Transformation (Перехід + Трансформація)</h3>
+        <div class="styled-div183">
+            <style>
+                .styled-div183 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: width 2s, height 2s, transform 2s;
+                }
+
+                .styled-div183 div:hover {
+                    width: 300px;
+                    height: 300px;
+                    transform: rotate(180deg);
+                }
+            </style>
+            <div>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Add a 2 second transition effect for width changes of the <div> element. -->
+        <div class="styled-div184">
+            <style>
+                .styled-div184 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: width 2s;
+                }
+
+                .styled-div184 div:hover {
+                    width: 300px;
+                }
+            </style>
+            <div>
+                <div>This is a div</div>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Specify that the transition of the <div> element should have a "ease-in-out" speed curve. -->
+        <div class="styled-div185">
+            <style>
+                .styled-div185 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: width 2s;
+                    transition-timing-function: ease-in-out;
+                }
+
+                .styled-div185 div:hover {
+                    width: 300px;
+                }
+            </style>
+            <div>
+                <div>This is a div</div>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Specify that the transition of the <div> element should have a "0.5" second delay before starting. -->
+        <div class="styled-div186">
+            <style>
+                .styled-div186 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: width 2s;
+                    transition-delay: 0.5s;
+                }
+
+                .styled-div186 div:hover {
+                    width: 300px;
+                }
+            </style>
+            <div>
+                <div>This is a div</div>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Add a 2 second transition effect for background, and transform changes of the <div> element. -->
+        <div class="styled-div187">
+            <style>
+                .styled-div187 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: background 2s, transform 2s;
+                }
+
+                .styled-div187 div:hover {
+                    background: blue;
+                    transform: rotate(180deg);
+                }
+            </style>
+            <div>
+                <div>This is a div</div>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Add a 2 second transition effect for background, and transform changes of the <div> element. -->
+        <div class="styled-div188">
+            <style>
+                .styled-div188 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: width 2s ease-in-out 0.5s;
+                }
+
+                .styled-div188 div:hover {
+                    width: 400px;
+                }
+            </style>
+            <div>
+                <div>This is a div</div>
+            </div>
+        </div>
+        <br>
+        <h1 style="color:blue "><i>2.12 CSS Ефекти тексту</i></h1>
+        <h3 style="color: green;">Приклад 1: CSS text-overflow - Переповнення</h3>
+        <div class="styled-div189">
+            <style>
+                .styled-div189 p.test1 {
+                    white-space: nowrap;
+                    width: 200px;
+                    border: 1px solid #000000;
+                    overflow: hidden;
+                    text-overflow: clip;
+                }
+
+                .styled-div189 p.test2 {
+                    white-space: nowrap;
+                    width: 200px;
+                    border: 1px solid #000000;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .styled-div189 div.test {
+                    white-space: nowrap;
+                    width: 200px;
+                    overflow: hidden;
+                    border: 1px solid #000000;
+                }
+
+                .styled-div189 div.test:hover {
+                    overflow: visible;
+                }
+            </style>
+            <p class="test1">This is some long text that will not fit in the box</p>
+            <p class="test2">This is some long text that will not fit in the box</p>
+            <div class="test" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
+            <br>
+            <div class="test" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
+        </div>
+        <h3 style="color: green;">Приклад 2: CSS word-wrap - Перенесення слів</h3>
+        <div class="styled-div190">
+            <style>
+                .styled-div190 p.test {
+                    width: 11em;
+                    border: 1px solid #000000;
+                    word-wrap: break-word;
+                }
+            </style>
+            <p class="test">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long
+                word will break and wrap to the next line.</p>
+        </div>
+        <h3 style="color: green;">Приклад 3: CSS word-break - Обривання слів</h3>
+        <div class="styled-div191">
+            <style>
+                .styled-div191 p.test1 {
+                    width: 140px;
+                    border: 1px solid #000000;
+                    word-break: keep-all;
+                }
+
+                .styled-div191 p.test2 {
+                    width: 140px;
+                    border: 1px solid #000000;
+                    word-break: break-all;
+                }
+            </style>
+            <p class="test1">This paragraph contains some text. This line will-break-at-hyphens.</p>
+
+            <p class="test2">This paragraph contains some text. The lines will break at any character.</p>
+        </div>
+        <h3 style="color: green;">Приклад 4: CSS writing-mode - Режим запису</h3>
+        <div class="styled-div192">
+            <style>
+                .styled-div192 p.test1 {
+                    writing-mode: horizontal-tb;
+                }
+
+                .styled-div192 span.test2 {
+                    writing-mode: vertical-rl;
+                }
+
+                .styled-div192 p.test2 {
+                    writing-mode: vertical-rl;
+                }
+            </style>
+
+            <p class="test1">Some text with default writing-mode.</p>
+
+            <p>Some text with a span element with a <span class="test2">vertical-rl</span> writing-mode.</p>
+
+            <p class="test2">Some text with writing-mode: vertical-rl.</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Specify that the overflowed content for the <p> element should be signaled with an ellipsis (...).-->
+        <div class="styled-div193">
+            <style>
+                .styled-div193 p {
+                    white-space: nowrap;
+                    width: 200px;
+                    border: 1px solid #000000;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            </style>
+            <div>
+                <p>
+                    This paragraph contains a very long word: supercalifragilisticexpialidocious.
+                </p>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Specify that text in the <p> element should wrap, even if it needs to split in the middle of a word.-->
+        <div class="styled-div194">
+            <style>
+                .styled-div194 p {
+                    width: 150px;
+                    border: 1px solid #000000;
+                    word-wrap: break-word;
+                }
+            </style>
+            <div>
+                <p>
+                    This paragraph contains a very long word: supercalifragilisticexpialidocious.
+                </p>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Specify that text in the <p> element can break between any two letters.-->
+        <div class="styled-div195">
+            <style>
+                p {
+                    width: 150px;
+                    border: 1px solid #000000;
+                    word-break: break-all;
+                }
+            </style>
+            <div>
+                <p>
+                    This paragraph contains a very long word: supercalifragilisticexpialidocious.
+                </p>
+            </div>
+        </div>
     </main>
     <footer>
 
